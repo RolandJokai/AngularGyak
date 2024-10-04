@@ -1,1 +1,54 @@
-<p>Bútorok</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Bútorok</h1>
+            <form class="my-3">
+                <div class="form-group my-3">
+                    <label for="Cikkszám" class="form-label">Cikkszám</label>
+                    <input type="ciksszam" id="cikkszam" class="form-control" [(ngModel)]="cikkszam">
+                </div>
+
+                <div class="form-group my-3">
+                    <label for="megnevezes" class="form-label">Megnevezés</label>
+                    <input type="megnevezes" id="megnevezes" class="form-control" [(ngModel)]="megnevezes">
+                </div>
+
+                <div class="form-group my-3">
+                    <label for="ar" class="form-label">Ár</label>
+                    <input type="ar" id="ar" class="form-control" [(ngModel)]="ar">
+                </div>
+
+                <div class="form-group my-3">
+                    <label for="db" class="form-label">Darabszám</label>
+                    <input type="db" id="db" class="form-control" [(ngModel)]="db">
+                </div>
+                <br>
+                <button class="btn btn-primary" type="button" (click)="felvitel()">Felvitel</button>
+            </form>
+
+            <hr>
+
+            <h1 class="text-center my-5">Felvitt bútorok</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Cikkszám</th>
+                        <th>Megnevezés</th>
+                        <th>Ár</th>
+                        <th>Darabszám</th>
+                    </tr>
+                </thead>
+                <tbody id="ButorokTorzs">
+                    <tr *ngFor="let butor of butorok">
+                        <td>{{butor.cikkszam}}</td>
+                        <td>{{butor.megnevezes}}</td>
+                        <td>{{butor.ar}}</td>
+                        <td>{{butor.db}}</td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+</div>

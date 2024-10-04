@@ -9,7 +9,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">AngularGyak</a>
+      <a class="navbar-brand" routerLink="fooldal">AngularGyak</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="fooldal">Főoldal</a>
+            <a class="nav-link" aria-current="page" routerLink="fooldal">Főoldal</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="butorok">Bútorok</a>
@@ -33,7 +33,7 @@
 
 
   <footer class="bg-dark text-white text-center fixed-bottom">
-    <h4 class="py-3">AngularGyak</h4>
+    <h4 class="py-3">AngularGyak &copy; Jókai Roland</h4>
   </footer>
 
   <router-outlet />

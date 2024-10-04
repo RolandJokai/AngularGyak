@@ -7,6 +7,7 @@ import { FooldalComponent } from './fooldal/fooldal.component';
 import { RolunkComponent } from './rolunk/rolunk.component';
 import { ButorokComponent } from './butorok/butorok.component';
 import { ErrorComponent } from './error/error.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ErrorComponent } from './error/error.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
